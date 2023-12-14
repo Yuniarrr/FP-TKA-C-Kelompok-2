@@ -1,14 +1,14 @@
 # FP-TKA-C-Kelompok-2
 
 ## Anggota: 
-Nama | NRP 
---- | --- 
-Arfan Yusran | 5027211017 
-Annisa Rahmapuri | 5027211018
-Abdul Zaki Syahrul Rahmat | 5027211020
-Yohannes Hasahatan Tua Alexandro | 5027211022 
-Yoga Hartono | 5027211023
-Midyanisa Yuniar | 5027211025 
+Nama                              | NRP 
+---                               | --- 
+Arfan Yusran                      | 5027211017 
+Annisa Rahmapuri                  | 5027211018
+Abdul Zaki Syahrul Rahmat         | 5027211020
+Yohannes Hasahatan Tua Alexandro  | 5027211022 
+Yoga Hartono                      | 5027211023
+Midyanisa Yuniar                  | 5027211025 
 
 
 ## Latar Belakang
@@ -20,8 +20,29 @@ Guna menyelesaikan masalah tersebut, kami selaku kelompok C-2 sepakat untuk memb
 1. Arsitektur Komputasi Awan Menggunakan 2 Worker
 ![Arsitektur Cloud Menggunakan 2 Worker](/images/[2-Worker]ArsitekturCloud.jpg)
 
-2. Arsitektur Komputasi Awan Menggunakan 3 Worker
+Spesifikasi yang digunakan adalah sebagai berikut :
+| No  | Nama                | Spesifikasi                  | Fungsi             | Harga/bulan |
+| --- | ------------------- | ---------------------------- | ------------------ | ----------- |
+| 1   | vm3-LoadBalancer    | Regular 1vCPU, 2GB Memory    | Load Balancer      | $12         |
+| 2   | vm2-Worker          | Regular 1vCPU, 1GB Memory    | App Worker 1       | $6          |
+| 3   | vm2-Worker1         | Regular 1vCPU, 1GB Memory    | App Worker 2       | $6          |
+| 4   | vm3-DatabaseServer  | Regular 1vCPU, 2GB Memory    | Database Server    | $12         |
+| --- | Total               |                              |                    | $36         |
+
+
+3. Arsitektur Komputasi Awan Menggunakan 3 Worker
 ![Arsitektur Cloud Menggunakan 3 Worker](/images/[3-Worker]ArsitekturCloud.png)
+
+Spesifikasi yang digunakan adalah sebagai berikut 
+| No  | Nama                | Spesifikasi                  | Fungsi             | Harga/bulan |
+| --- | ------------------- | ---------------------------- | ------------------ | ----------- |
+| 1   | vm3-LoadBalancer    | Regular 1vCPU, 2GB Memory    | Load Balancer      | $12         |
+| 2   | vm2-Worker1         | Regular 1vCPU, 1GB Memory    | App Worker 1       | $6          |
+| 3   | vm2-Worker2         | Regular 1vCPU, 1GB Memory    | App Worker 2       | $6          |
+| 4   | vm2-Worker3         | Regular 1vCPU, 1GB Memory    | App Worker 3       | $6          |
+| 5   | vm3-DatabaseServer  | Regular 1vCPU, 2GB Memory    | Database Server    | $12         |
+| --- | Total               |                              |                    | $42         |
+
 
 ## Implementasi
 
