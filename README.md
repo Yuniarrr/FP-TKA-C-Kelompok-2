@@ -22,13 +22,14 @@ Guna menyelesaikan masalah tersebut, kami selaku kelompok C-2 sepakat untuk memb
 2. Arsitektur Komputasi Awan Menggunakan 3 Worker
 ![Arsitektur Cloud Menggunakan 3 Worker](/images/[3-Worker]ArsitekturCloud.png)
 
-## Metode Implementasi
-
+## Implementasi
 
 ### Alat
+Uji coba terhadap arsitektur awan tersebut dibutuhkan beberapa alat atau tools untuk mengimplementasikan arsitektur tersebut ke dalam kasus nyata. Alat atau tools yang dimaksud adalah Docker, Docker Compose, FastAPI, dan MongoDB sebagai database serta Locust sebagai media untuk melakukan load testing.
 
 
 ### Proses
+
 
 
 ### Hasil Pengujian
