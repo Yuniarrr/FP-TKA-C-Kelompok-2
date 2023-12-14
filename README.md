@@ -12,7 +12,7 @@ Midyanisa Yuniar | 5027211025
 
 
 ## Latar Belakang
-Pada suatu ketika, Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kemampuan yang harus dimiliki adalah Keampuan merancang, membangun, mengelola aplikasi berbasis komputer menggunakan layanan awan untuk memenuhi kebutuhan organisasi.(menurut kurikulum IT ITS 2023 😙), dapat klik link [berikut](https://github.com/fuaddary/fp-tka).
+Pada suatu ketika, Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kemampuan yang harus dimiliki adalah Keampuan merancang, membangun, mengelola aplikasi berbasis komputer menggunakan layanan awan untuk memenuhi kebutuhan organisasi.(menurut kurikulum IT ITS 2023 😙). Untuk informasi lebih lanjut dapat klik link [berikut](https://github.com/fuaddary/fp-tka).
 
 ## Rancangan Arsitektur Komputasi Awan
 Guna menyelesaikan masalah tersebut, kami selaku kelompok C-2 sepakat untuk membangun 2 arsitektur komputasi awan yakni 2 Worker dan 3 Worken. Hal tersebut merupakan benang merah yang ditarik untuk mendapatkan konfigurasi cloud yang terbaik. Kedua arsitektur tersebut yaitu :
