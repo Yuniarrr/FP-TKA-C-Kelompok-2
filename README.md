@@ -118,3 +118,9 @@ Pengujian terhadap Loadtesting dengan menggunakan LOCUST untuk endpoint GET ORDE
 
 
 ## Kesimpulan dan Saran
+Berdasarkan uji coba yang telah dilakukan, didapatkan beberapa hasil yaitu :
+
+1. Jumlah Request per seconds (RPS) maksimum yang dapat ditangani oleh server dengan durasi waktu load testing selama 60 detik adalah sebesar 333.3 RPS dengan 0% failure.
+2. Jumlah peak concurrency maksimum maksimum yang dapat ditangani oleh server dengan spawn rate 25 dan durasi waktu load testing selama 60 detik adalah sebanyak 750 user dengan 0% failure.
+3. Jumlah peak concurrency maksimum maksimum yang dapat ditangani oleh server dengan spawn rate 50 dan durasi waktu load testing selama 60 detik adalah sebanyak 750 user dengan 0% failure.
+4. Jumlah peak concurrency maksimum maksimum yang dapat ditangani oleh server dengan spawn rate 100 dan durasi waktu load testing selama 60 detik adalah sebanyak 725 user dengan 0% failure.
