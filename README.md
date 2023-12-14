@@ -37,7 +37,7 @@ Kami melakukan beberapa pengujian terhadap kedua arsitektur tersebut atas dasar 
 
 
 #### Pengujian Terhadap Setiap Endpoint
-Pengujian terhadap setiap Endpoint dilakukan dengan menggunakan POSTMAN terhadap GET, GET ID, POST, PUT, dan DELETE. Pengujian dilakukan kepada kedua arsitektur tersebut dan hasil pengujian dapat dilihat sebagai berikut :
+Pengujian terhadap setiap Endpoint dilakukan dengan menggunakan POSTMAN terhadap GET, GET ID, POST, dan DELETE. Pengujian dilakukan kepada kedua arsitektur tersebut dan hasil pengujian dapat dilihat sebagai berikut :
 
 1. Pengujian Terhadap Arsitektur Cloud 2 Worker
 - GET
@@ -47,7 +47,6 @@ Pengujian terhadap setiap Endpoint dilakukan dengan menggunakan POSTMAN terhadap
 ![GET ID Worker 1](/images/[2-Worker]Worker1_GET-ID.png)
 ![GET ID Worker 2](/images/[2-Worker]Worker2_GET-ID.png)
 - POST
-- PUT
 - DELETE
 ![DELETE Worker 1](/images/[2-Worker]Worker1_DELETE.png)
 ![DELETE Worker 2](/images/[2-Worker]Worker2_DELETE.png)
@@ -63,7 +62,6 @@ Pengujian terhadap setiap Endpoint dilakukan dengan menggunakan POSTMAN terhadap
 ![GET ID Worker 2](/images/[3-Worker]Worker2_GET-ID.png)
 ![GET ID Worker 3](/images/[3-Worker]Worker3_GET-ID.png)
 - POST
-- PUT
 - DELETE
 ![DELETE Worker 1](/images/[3-Worker]Worker1_DELETE.png)
 ![DELETE Worker 2](/images/[3-Worker]Worker2_DELETE.png)
