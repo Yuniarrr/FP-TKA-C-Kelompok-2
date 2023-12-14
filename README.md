@@ -1,6 +1,6 @@
 # FP-TKA-C-Kelompok-2
 
-### Anggota: 
+## Anggota: 
 Nama | NRP 
 --- | --- 
 Arfan Yusran | 5027211017 
@@ -9,3 +9,29 @@ Abdul Zaki Syahrul Rahmat | 5027211020
 Yohannes Hasahatan Tua Alexandro | 5027211022 
 Yoga Hartono | 5027211023
 Midyanisa Yuniar | 5027211025 
+
+## Latar Belakang
+
+
+## Rancangan Arsitektur Komputasi Awan
+
+
+## Metode Implementasi
+
+
+### Alat
+
+
+### Proses
+
+
+### Hasil Pengujian
+
+
+#### Pengujian Terhadap Setiap Endpoint
+
+
+#### Pengujian Terhadap Loadtesting
+
+
+## Kesimpulan dan Saran
