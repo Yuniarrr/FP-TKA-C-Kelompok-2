@@ -10,6 +10,11 @@ Yohannes Hasahatan Tua Alexandro | 5027211022
 Yoga Hartono | 5027211023
 Midyanisa Yuniar | 5027211025 
 
+## Daftar Isi
+  - [Anggota](#Anggota)
+  - [Daftar Isi](#DaftarIsi)
+  - [Latar Belakang](#LatarBelakang)
+
 ## Latar Belakang
 Pada suatu ketika, Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kemampuan yang harus dimiliki adalah Keampuan merancang, membangun, mengelola aplikasi berbasis komputer menggunakan layanan awan untuk memenuhi kebutuhan organisasi.(menurut kurikulum IT ITS 2023 😙), dapat klik link [berikut](https://github.com/fuaddary/fp-tka).
 
