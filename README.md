@@ -258,4 +258,18 @@ Berdasarkan uji coba yang telah dilakukan, didapatkan beberapa hasil yaitu :
 3. Jumlah peak concurrency maksimum maksimum yang dapat ditangani oleh server dengan spawn rate 50 dan durasi waktu load testing selama 60 detik adalah sebanyak 750 user dengan 0% failure.
 4. Jumlah peak concurrency maksimum maksimum yang dapat ditangani oleh server dengan spawn rate 100 dan durasi waktu load testing selama 60 detik adalah sebanyak 725 user dengan 0% failure.
 
+Perbandingan dan Analisis:
+
+Stabilitas dan Efektivitas:
+
+Dari hasil uji coba, terlihat bahwa arsitektur dengan 2 worker memberikan hasil yang lebih stabil, yaitu dapat menangani 333.3 RPS tanpa kegagalan, sedangkan arsitektur dengan 3 worker memiliki variasi hasil, terutama pada spawn rate 100.
+Kestabilan menjadi faktor kunci, terutama dalam lingkungan produksi di mana konsistensi kinerja server sangat penting.
+- Kelebihan Arsitektur 2 Worker:
+1. Kinerja yang Stabil: Arsitektur 2 worker menunjukkan kinerja yang stabil dengan jumlah RPS yang tinggi tanpa kegagalan.
+2. Manajemen Sumber Daya: Dengan dua worker, mungkin lebih mudah untuk mengelola sumber daya server tanpa membebani sistem secara berlebihan.
+- Kekurangan Arsitektur 3 Worker:
+1. Variabilitas Kinerja: Terlihat bahwa arsitektur 3 worker memiliki variasi hasil terutama pada kondisi tertentu seperti spawn rate 100. Variabilitas ini dapat menunjukkan kemungkinan masalah dalam manajemen sumber daya atau konfigurasi yang kurang optimal.
+- Mengapa Arsitektur 2 Worker Lebih Efektif:
+1. Arsitektur 2 worker lebih efektif karena mampu mengatasi beban dengan lebih baik tanpa terlalu banyak overhead. Juga, manajemen dua worker mungkin lebih efisien dalam lingkungan yang diberikan.
+
 Berdasarkan data uji coba tersebut, dapat ditarik kesimpulan bahwa 2 Worker lebih stabil dibandingna 3 Worker meski hanya selisih sedikit saja. Cara tersebut didapatkan dari hasil uji coba dari seluruh arsitektur yang kami bentuk. Kemudian diperlukannya menambahkan caching pada Load Balancer guna mendapatkan hasil ayng lebih optimal.
