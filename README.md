@@ -272,4 +272,4 @@ Kestabilan menjadi faktor kunci, terutama dalam lingkungan produksi di mana kons
 - Mengapa Arsitektur 2 Worker Lebih Efektif:
 1. Arsitektur 2 worker lebih efektif karena mampu mengatasi beban dengan lebih baik tanpa terlalu banyak overhead. Juga, manajemen dua worker mungkin lebih efisien dalam lingkungan yang diberikan.
 
-Berdasarkan data uji coba tersebut, dapat ditarik kesimpulan bahwa 2 Worker lebih stabil dibandingna 3 Worker meski hanya selisih sedikit saja. Cara tersebut didapatkan dari hasil uji coba dari seluruh arsitektur yang kami bentuk. Kemudian diperlukannya menambahkan caching pada Load Balancer guna mendapatkan hasil ayng lebih optimal.
+Berdasarkan data uji coba tersebut, dapat ditarik kesimpulan bahwa 2 Worker lebih stabil dibandingkan 3 Worker meski hanya selisih sedikit saja. Cara tersebut didapatkan dari hasil uji coba dari seluruh arsitektur yang kami bentuk. Kemudian diperlukannya menambahkan caching pada Load Balancer guna mendapatkan hasil ayng lebih optimal.
