@@ -24,10 +24,10 @@ Spesifikasi yang digunakan adalah sebagai berikut :
 | No  | Nama                | Spesifikasi                  | Fungsi             | Harga/bulan |
 | --- | ------------------- | ---------------------------- | ------------------ | ----------- |
 | 1   | vm3-LoadBalancer    | Regular 1vCPU, 2GB Memory    | Load Balancer      | $12         |
-| 2   | vm2-Worker          | Regular 1vCPU, 1GB Memory    | App Worker 1       | $8          |
-| 3   | vm2-Worker1         | Regular 1vCPU, 1GB Memory    | App Worker 2       | $8          |
+| 2   | vm2-Worker          | Regular 1vCPU, 1GB Memory    | App Worker 1       | $12         |
+| 3   | vm2-Worker1         | Regular 1vCPU, 1GB Memory    | App Worker 2       | $12         |
 | 4   | vm3-DatabaseServer  | Regular 1vCPU, 2GB Memory    | Database Server    | $12         |
-| --- | Total               |                              |                    | $40         |
+| --- | Total               |                              |                    | $48         |
 
 
 3. Arsitektur Komputasi Awan Menggunakan 3 Worker
