@@ -280,6 +280,14 @@ Pengujian terhadap Loadtesting dengan menggunakan LOCUST untuk endpoint GET ORDE
 - 100 Spawn Rate
 ![100 Spawn Rate Terhadap 3 Worker](/images/[3-Worker]SR100Peak725.png)
 
+3. Pengujian Terhadap Arsitektur Menggunakan Server Azure
+- 25 Spawn Rate
+(![25 sr](https://github.com/Yuniarrr/FP-TKA-C-Kelompok-2/assets/99706251/d4487376-08a2-4df9-978c-6bd5b18b35ec)
+- 50 Spawn Rate
+(![50 sr](https://github.com/Yuniarrr/FP-TKA-C-Kelompok-2/assets/99706251/f612949e-2401-4b5a-b1bc-ec79d0df6b16)
+- 100 Spawn Rate
+(![100sr](https://github.com/Yuniarrr/FP-TKA-C-Kelompok-2/assets/99706251/2b9214cb-80bf-426a-8223-0bdec4cc3777)
+
 
 ## Kesimpulan dan Saran
 Berdasarkan uji coba yang telah dilakukan, didapatkan beberapa hasil yaitu :
