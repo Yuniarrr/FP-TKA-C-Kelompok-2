@@ -41,7 +41,7 @@ Spesifikasi yang digunakan adalah sebagai berikut
 | 3   | vm2-Worker2         | Regular 1vCPU, 1GB Memory    | App Worker 2       | $8          |
 | 4   | vm2-Worker3         | Regular 1vCPU, 1GB Memory    | App Worker 3       | $8          |
 | 5   | vm3-DatabaseServer  | Regular 1vCPU, 2GB Memory    | Database Server    | $12         |
-| --- | Total               |                              |                    | $48         |
+| --- | Total               |                              |                    | $40         |
 
 
 ## Implementasi
