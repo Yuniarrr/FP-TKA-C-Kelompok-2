@@ -108,8 +108,15 @@ sudo apt update
 echo "Installing nginx..."
 sudo apt install nginx
 
+sudo mkdir /var/cache/nginx
+sudo mkdir /var/cache/nginx2
+sudo chown www-data:www-data /var/cache/nginx
+sudo chown www-data:www-data /var/cache/nginx2
+
 # Konten konfigurasi Nginx
-echo "upstream app {
+echo "proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=cache1:10m inactive=60m;
+
+upstream app {
     server 172.208.23.151:8000;
     server 172.208.82.223:8000;
 }
@@ -120,12 +127,35 @@ server {
 
     location / {
         proxy_pass http://app;
+        proxy_cache cache1;
+        proxy_cache_valid any 10m;
     }
 }
 " | sudo tee /etc/nginx/sites-available/my_proxy
 
+echo "proxy_cache_path /var/cache/nginx2 levels=1:2 keys_zone=cache2:10m inactive=60m;
+
+upstream app2 {
+    server 172.171.251.101:8000;
+    server 172.171.253.255:8000;
+    server 40.76.121.74:8000;
+}
+
+server {
+    listen 8000;
+    server_name _;
+
+    location / {
+        proxy_pass http://app2;
+        proxy_cache cache2;
+        proxy_cache_valid any 10m;
+    }
+}
+" | sudo tee /etc/nginx/sites-available/my_proxy_2
+
 # Membuat tautan simbolik ke sites-enabled
 sudo ln -s /etc/nginx/sites-available/my_proxy "/etc/nginx/sites-enabled/"
+sudo ln -s /etc/nginx/sites-available/my_proxy_2 "/etc/nginx/sites-enabled/"
 
 sudo rm /etc/nginx/sites-enabled/default
 
@@ -138,6 +168,7 @@ sudo systemctl restart nginx
 sudo ufw status
 sudo ufw enable
 sudo ufw allow 80
+sudo ufw allow 8000
 ```
 
 
@@ -272,4 +303,7 @@ Kestabilan menjadi faktor kunci, terutama dalam lingkungan produksi di mana kons
 - Mengapa Arsitektur 2 Worker Lebih Efektif:
 1. Arsitektur 2 worker lebih efektif karena mampu mengatasi beban dengan lebih baik tanpa terlalu banyak overhead. Juga, manajemen dua worker mungkin lebih efisien dalam lingkungan yang diberikan.
 
-Berdasarkan data uji coba tersebut, dapat ditarik kesimpulan bahwa 2 Worker lebih stabil dibandingkan 3 Worker meski hanya selisih sedikit saja. Cara tersebut didapatkan dari hasil uji coba dari seluruh arsitektur yang kami bentuk. Kemudian diperlukannya menambahkan caching pada Load Balancer guna mendapatkan hasil ayng lebih optimal.
+Berdasarkan data uji coba tersebut, dapat ditarik kesimpulan bahwa 2 Worker lebih stabil dibandingkan 3 Worker meski hanya selisih sedikit saja. Hal ini disebabkan karena beberapa faktor, yaitu:
+1. Pada 2 worker (1cpu, 2gb) dari segi ukuran lebih besar dibandingkan dengan 3 worker (1cpu 1gb). Jika ingin menambah jumlah worker dengan ukuran yang lebih kecil maka perbandingan untuk jumlah worker juga harus setara, dalam hal ini seharusnya 4 worker (1cpu 1gb). Namun, hal ini belum kami terapkan dikarekan keterbatasan resource dari azure sendiri.
+2. Pada saat pertama kali dilakukan uji coba, kamu tidak pernah menghapus data pada database sehingga hal ini membuat database penuh, sehingga hal ini telah teratasi dengan menghapus datanya.
+3. Pada saat dilakukan pengujian load balancing, pada awalnya kami tidak memanfaatan caching sehingga tiap kali melakukan request kepada server load balancing akan terasa lama dan berat. Namun, setelah menambahkan caching pada load balancer kecepatan request sedikit terjadi perubahan.
